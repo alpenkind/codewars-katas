@@ -66,3 +66,17 @@ function noSpace(x) {
 }
 
 console.log(noSpace("8 j 8   mBliB8g  imjB8B8  jl  B"));
+
+//// TASK 6
+
+/*Remove an exclamation mark from the end of a string.
+For a beginner kata, you can assume that the input data is always a string, no need to verify it.*/
+
+function removeString(string) {
+  if (string.charAt(string.length - 1) === "!") {
+    return string.slice(0, -1);
+  } else {
+    return string;
+  }
+}
+console.log(removeString("!Hi"));
