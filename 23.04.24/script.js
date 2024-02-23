@@ -36,3 +36,19 @@ function getMiddle(s) {
     return s.substring(position - 1, position + 1);
   }
 }
+
+//TASK4
+/*An isogram is a word that has no repeating letters, consecutive or non-consecutive.
+    Implement a function that determines whether a string that contains only letters is an isogram.
+    Assume the empty string is an isogram. Ignore letter case.*/
+
+function isIsogram(str) {
+  for (let i = 0; i < str.length; i++) {
+    for (let e = i + 1; e < str.length; e++) {
+      if (str[i].toLowerCase() === str[e].toLowerCase()) {
+        return false;
+      }
+    }
+  }
+  return true;
+}
