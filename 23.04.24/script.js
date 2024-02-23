@@ -8,7 +8,6 @@ function solution(str) {
 }
 
 //TASK2
-
 /*Given an array of numbers, return a new array of length number containing the last even numbers from the original array (in the same order).
   The original array will be not empty and will contain at least "number" even numbers.*/
 
@@ -51,4 +50,19 @@ function isIsogram(str) {
     }
   }
   return true;
+}
+
+//TASK5
+/*Return the number (count) of vowels in the given string.
+    We will consider a, e, i, o, u as vowels for this Kata (but not y).
+    The input string will only consist of lower case letters and/or spaces.*/
+
+function getCount(str) {
+  let result = 0;
+  let array = [];
+  array = str.match(/[aeiou]/g);
+  if (array !== null) {
+    result = array.length;
+  }
+  return result;
 }
