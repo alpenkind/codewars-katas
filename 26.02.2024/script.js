@@ -101,3 +101,19 @@ function bandNameGenerator(str) {
     return "The " + str.charAt(0).toUpperCase() + str.slice(1);
   }
 }
+
+//Task5
+//Name shuffler
+/*Write a function that returns a string in which firstname is swapped with last name.
+
+
+Example(Input --> Output)
+
+
+"john McClane" --> "McClane john"*/
+
+function nameShuffler(str) {
+  let arr = 0;
+  arr = str.split(" ");
+  return arr[1] + " " + arr[0];
+}
